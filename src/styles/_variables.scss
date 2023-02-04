@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+// Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Variables
+$text: #fff;
+$primary: #272727;
+$secondary: #ff652f;
+$font: "Poppins", sans-serif;
+
+@mixin flex-center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+@mixin transition-ease {
+  transition: all 0.25s ease-in-out;
+}
+
+@mixin burger {
+  position: absolute;
+  width: 28px;
+  height: 3px;
+  background-color: $text;
+}
+
+// @function set-text-color($color) {
+//   @if (lightness($color) > 40%) {
+//     @return #000;
+//   } @else {
+//     @return #fff;
+//   }
+// }

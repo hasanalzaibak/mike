@@ -1,0 +1,17 @@
+footer {
+  bottom: 0.5rem;
+  position: fixed;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.5rem;
+
+  a {
+    padding: 0.4rem;
+    @include transition-ease;
+    &:hover {
+      color: $secondary;
+    }
+  }
+}

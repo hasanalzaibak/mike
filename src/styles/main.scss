@@ -1,0 +1,21 @@
+@import "./variables";
+@import "../components/Header/header";
+@import "../components/Main/main";
+@import "../components/Footer/footer";
+@import "../components/About/about";
+@import "../components/Projects/projects";
+@import "../components/Contact/contact";
+
+body {
+  background: linear-gradient(
+    89deg,
+    rgba(63, 63, 63, 1) 0%,
+    rgba(39, 39, 39, 1) 100%
+  );
+  color: white;
+  height: 100vh;
+  font-family: $font;
+  line-height: 1;
+  position: relative;
+  overflow: hidden;
+}

@@ -1,0 +1,115 @@
+.about {
+  text-align: center;
+
+  h2 {
+    color: $secondary;
+  }
+
+  &__image {
+    height: 25vh;
+    width: 100%;
+    @include flex-center;
+    flex-direction: column;
+    background: linear-gradient(
+        to right,
+        rgba($primary, 0.8),
+        rgba($primary, 0.4)
+      ),
+      url("../../../src/assets/bg-2.jpg");
+    background-position: top;
+    background-size: cover;
+    justify-content: flex-end;
+    padding-bottom: 1.5rem;
+    h2 {
+      padding-bottom: 1rem;
+    }
+  }
+
+  p {
+    font-size: 11px;
+    line-height: 18px;
+    padding: 0rem 2rem;
+  }
+
+  &__jobs {
+    margin: 2rem auto 0 auto;
+    padding: 0rem 2rem;
+    @include flex-center;
+    gap: 1.5em;
+    flex-direction: column;
+
+    &-job {
+      background: lighten($primary, 10%);
+      border-bottom: 5px solid $secondary;
+      align-self: stretch;
+      padding-bottom: 2.5rem;
+      padding-top: 1rem;
+
+      h2 {
+        font-size: 20px;
+      }
+
+      h3 {
+        font-size: 16px;
+      }
+
+      h2,
+      h3 {
+        margin: 0.5rem 0;
+      }
+
+      h6 {
+        margin: 0.3rem 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    p {
+      font-size: 15px;
+      line-height: 20px;
+    }
+
+    &__image {
+      height: 51vh;
+
+      p {
+        max-width: 500px;
+      }
+
+      h2 {
+        font-size: 4rem;
+      }
+    }
+
+    &__jobs {
+      flex-direction: row-reverse;
+      align-items: flex-end;
+
+      &-job {
+        max-width: 500px;
+        align-self: stretch;
+        flex: 1;
+        h2 {
+          font-size: 24px;
+        }
+
+        h3 {
+          font-size: 20px;
+        }
+
+        h2,
+        h3 {
+          margin: 1.5rem 0;
+        }
+
+        h6 {
+          margin: 1rem 0;
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}
