@@ -1,7 +1,7 @@
 const Contact = () => {
   return (
     <section className="contact">
-    <h2>Contact Me...</h2>
+      <h2>Contact Me</h2>
       <div className="contact__list">
         <div className="contact__email">
           <i className="fas fa-envelope" />

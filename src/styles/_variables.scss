@@ -29,11 +29,3 @@ $font: "Poppins", sans-serif;
   height: 3px;
   background-color: $text;
 }
-
-// @function set-text-color($color) {
-//   @if (lightness($color) > 40%) {
-//     @return #000;
-//   } @else {
-//     @return #fff;
-//   }
-// }

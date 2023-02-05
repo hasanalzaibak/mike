@@ -58,6 +58,7 @@
         .btn {
           opacity: 1;
         }
+        border-bottom: 5px solid white;
       }
 
       &::after {
@@ -67,7 +68,7 @@
         left: 0;
         height: 100%;
         width: 100%;
-        background-color: $secondary;
+        background-color: white;
         opacity: 0;
         @include transition-ease;
       }
@@ -91,7 +92,7 @@
           color: $primary;
           @include transition-ease;
           &:hover {
-            color: white;
+            color: $secondary;
           }
         }
       }
@@ -110,7 +111,7 @@
     &__image {
       height: 51vh;
       h2 {
-        font-size: 4rem;
+        font-size: 3rem;
       }
     }
 

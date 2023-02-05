@@ -239,8 +239,9 @@ footer a:hover {
   background: #414141;
   border-bottom: 5px solid #ff652f;
   align-self: stretch;
-  padding-bottom: 2.5rem;
+  padding-bottom: 1rem;
   padding-top: 1rem;
+  transition: all 0.25s ease-in-out;
 }
 .about__jobs-job h2 {
   font-size: 20px;
@@ -255,6 +256,9 @@ footer a:hover {
 .about__jobs-job h6 {
   margin: 0.3rem 0;
 }
+.about__jobs-job:hover {
+  border-bottom: 5px solid white;
+}
 
 @media screen and (min-width: 768px) {
   .about p {
@@ -268,7 +272,7 @@ footer a:hover {
     max-width: 500px;
   }
   .about__image h2 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .about__jobs {
     flex-direction: row-reverse;
@@ -278,6 +282,7 @@ footer a:hover {
     max-width: 500px;
     align-self: stretch;
     flex: 1;
+    padding-bottom: 2.5rem;
   }
   .about__jobs-job h2 {
     font-size: 24px;
@@ -342,6 +347,9 @@ footer a:hover {
 .projects__links-link img {
   width: 100%;
 }
+.projects__links-link:hover {
+  border-bottom: 5px solid white;
+}
 .projects__links-link:hover::after {
   opacity: 0.9;
   top: 0;
@@ -356,7 +364,7 @@ footer a:hover {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #ff652f;
+  background-color: white;
   opacity: 0;
   transition: all 0.25s ease-in-out;
 }
@@ -380,7 +388,7 @@ footer a:hover {
   transition: all 0.25s ease-in-out;
 }
 .projects__links-link__btns .btn:hover {
-  color: white;
+  color: #ff652f;
 }
 
 @media screen and (min-width: 768px) {
@@ -393,7 +401,7 @@ footer a:hover {
     height: 51vh;
   }
   .projects__image h2 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .projects__links {
     flex-direction: row-reverse;
@@ -407,9 +415,9 @@ footer a:hover {
   }
 }
 .contact {
-  height: 100%;
-  padding-top: 30vh;
+  height: 100vh;
   overflow: hidden;
+  padding-top: 18vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -417,9 +425,10 @@ footer a:hover {
 .contact p {
   color: #ff652f;
   margin-top: 1rem;
+  font-size: 15px;
 }
 .contact h2 {
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 2rem;
 }
 .contact__list {
@@ -428,10 +437,31 @@ footer a:hover {
   grid-gap: 2rem;
   font-size: 1.5rem;
 }
+.contact__list div {
+  text-align: center;
+  background: #414141;
+  padding: 2rem 3rem;
+  border-top: 5px solid #ff652f;
+  transition: all 0.25s ease-in-out;
+  width: 85vw;
+  font-size: 20px;
+}
+.contact__list div:hover {
+  border-top: 5px solid white;
+}
 .contact i {
   padding-right: 1rem;
 }
 
+@media screen and (min-width: 768px) {
+  .contact h2 {
+    font-size: 3rem;
+  }
+  .contact__list div {
+    padding: 3rem 7rem;
+    max-width: 500px;
+  }
+}
 body {
   background: linear-gradient(89deg, rgb(63, 63, 63) 0%, rgb(39, 39, 39) 100%);
   color: white;
