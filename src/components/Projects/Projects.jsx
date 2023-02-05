@@ -2,6 +2,7 @@ import a from "../../assets/project-1.jpg";
 import b from "../../assets/project-2.jpg";
 import c from "../../assets/project-3.jpg";
 import { motion as m } from "framer-motion";
+import background from "../../assets/bg-3.jpg";
 
 const variants = {
   hidden: {
@@ -26,6 +27,7 @@ const Projects = () => {
       className="projects"
     >
       <m.div variants={variants} className="projects__image">
+        <img src={background} />
         <m.h2 variants={variants}>My Projects</m.h2>
         <m.p variants={variants}>
           Literature admiration frequently indulgence announcing are who you

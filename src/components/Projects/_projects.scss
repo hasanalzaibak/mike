@@ -16,18 +16,26 @@
     width: 100%;
     @include flex-center;
     flex-direction: column;
-    background: linear-gradient(
-        to right,
-        rgba($primary, 0.8),
-        rgba($primary, 0.4)
-      ),
-      url("../../../src/assets/bg-3.jpg");
-    background-position: top;
-    background-size: cover;
+
     justify-content: flex-end;
-    padding-bottom: 1.5rem;
+
     h2 {
       padding-bottom: 1rem;
+    }
+
+    position: relative;
+    overflow: hidden;
+
+    img {
+      position: absolute;
+      z-index: -3;
+      filter: brightness(0.4);
+      top: -20rem;
+      object-fit: cover;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
     }
   }
 
@@ -112,6 +120,10 @@
       height: 51vh;
       h2 {
         font-size: 3rem;
+      }
+      img {
+        top: -10rem;
+        width: 100vw;
       }
     }
 

@@ -1,4 +1,5 @@
 import { motion as m } from "framer-motion";
+import background from "../../assets/bg.jpg";
 
 const variants = {
   hidden: {
@@ -21,6 +22,7 @@ const Main = () => {
       animate="visible"
       exit="hidden"
     >
+      <m.img variants={variants} src={background} />
       <m.section variants={variants}>
         <m.h2 variants={variants}>Hello! My name is</m.h2>
         <m.h1 variants={variants}>

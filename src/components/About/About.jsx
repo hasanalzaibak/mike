@@ -1,4 +1,5 @@
 import { motion as m } from "framer-motion";
+import background from "../../assets/bg-2.jpg";
 
 const variants = {
   hidden: {
@@ -23,6 +24,7 @@ const About = () => {
       exit="hidden"
     >
       <m.div variants={variants} className="about__image">
+        <img src={background} />
         <m.h2 variants={variants}>BIO</m.h2>
         <m.p variants={variants}>
           Literature admiration frequently indulgence announcing are who you

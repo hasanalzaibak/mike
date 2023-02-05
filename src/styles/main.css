@@ -152,9 +152,15 @@ main {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.8), rgba(39, 39, 39, 0.4)), url("../../../src/assets/bg.jpg");
-  background-position: center;
-  background-size: cover;
+}
+main img {
+  position: fixed;
+  z-index: -3;
+  filter: brightness(0.4);
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 main section {
   align-items: center;
@@ -212,14 +218,23 @@ footer a:hover {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.8), rgba(39, 39, 39, 0.4)), url("../../../src/assets/bg-2.jpg");
-  background-position: top;
-  background-size: cover;
   justify-content: flex-end;
-  padding-bottom: 1.5rem;
+  position: relative;
+  overflow: hidden;
 }
 .about__image h2 {
   padding-bottom: 1rem;
+}
+.about__image img {
+  position: absolute;
+  z-index: -3;
+  filter: brightness(0.4);
+  top: -13rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about__image p {
+  margin-bottom: 1.5rem;
 }
 .about p {
   font-size: 11px;
@@ -274,6 +289,10 @@ footer a:hover {
   .about__image h2 {
     font-size: 3rem;
   }
+  .about__image img {
+    top: 0;
+    width: 100vw;
+  }
   .about__jobs {
     flex-direction: row;
     align-items: flex-end;
@@ -317,14 +336,23 @@ footer a:hover {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.8), rgba(39, 39, 39, 0.4)), url("../../../src/assets/bg-3.jpg");
-  background-position: top;
-  background-size: cover;
   justify-content: flex-end;
-  padding-bottom: 1.5rem;
+  position: relative;
+  overflow: hidden;
 }
 .projects__image h2 {
   padding-bottom: 1rem;
+}
+.projects__image img {
+  position: absolute;
+  z-index: -3;
+  filter: brightness(0.4);
+  top: -20rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.projects__image p {
+  margin-bottom: 1.5rem;
 }
 .projects__links {
   margin: 2rem auto 0 auto;
@@ -402,6 +430,10 @@ footer a:hover {
   }
   .projects__image h2 {
     font-size: 3rem;
+  }
+  .projects__image img {
+    top: -10rem;
+    width: 100vw;
   }
   .projects__links {
     flex-direction: row;
