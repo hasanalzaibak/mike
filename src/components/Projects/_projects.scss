@@ -21,7 +21,7 @@
         rgba($primary, 0.8),
         rgba($primary, 0.4)
       ),
-      url("../../../src/assets/bg-2.jpg");
+      url("../../../src/assets/bg-3.jpg");
     background-position: top;
     background-size: cover;
     justify-content: flex-end;
@@ -116,7 +116,7 @@
     }
 
     &__links {
-      flex-direction: row-reverse;
+      flex-direction: row;
       align-items: flex-end;
 
       &-link {
