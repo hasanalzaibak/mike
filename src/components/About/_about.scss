@@ -36,7 +36,7 @@
 
   &__jobs {
     margin: 2rem auto 0 auto;
-    padding: 0rem 2rem;
+    padding: 0rem 1rem;
     @include flex-center;
     gap: 1.5em;
     flex-direction: column;
@@ -45,8 +45,7 @@
       background: lighten($primary, 10%);
       border-bottom: 5px solid $secondary;
       align-self: stretch;
-      padding-bottom: 1rem;
-      padding-top: 1rem;
+      padding: 0.5rem 0;
       @include transition-ease;
 
       h2 {
@@ -106,6 +105,7 @@
         align-self: stretch;
         flex: 1;
         padding-bottom: 2.5rem;
+        padding-top: 1rem;
         h2 {
           font-size: 24px;
         }
